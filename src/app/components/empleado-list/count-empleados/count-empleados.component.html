@@ -1,1 +1,22 @@
-<p>count-empleados works!</p>
+<div class="card">
+    <div class="card body">
+      <div class="d-flex">
+        <div class="form-check form-check-inline">
+          <!-- Notice: radioChange() is Method to emit event from child to Parent (Definition of the method was implemented on parent) -->
+          <input class="form-check-input" type="radio" name="sexo" id="todos" value="Todos"
+            [(ngModel)]="selectedRadioButton" (change)="radioChange()">
+          <label class="form-check-label" for="todos"> &nbsp;Todos({{todos}})</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="sexo" id="femenino" value="Femenino"
+            [(ngModel)]="selectedRadioButton" (change)="radioChange()">
+          <label class="form-check-label" for="femenino"> &nbsp; Femenino({{femenino}})</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="sexo" id="masculino" value="Masculino"
+            [(ngModel)]="selectedRadioButton" (change)="radioChange()">
+          <label class="form-check-label" for="masculino"> &nbsp; Masculino({{masculino}})</label>
+        </div>
+      </div>
+    </div>
+  </div>
